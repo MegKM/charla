@@ -1,0 +1,140 @@
+:root {
+    --white: #FFFFFF;
+    --color-1: #FF5959;
+    --color-2: #FACF5A;
+    --color-3: #49BEB7;
+    --color-4: #085F63;
+    --color-5: #074a4e;
+    --dark-grey: #202020;
+    --light-grey: #a9a9a9;
+    --beige: #FFE3B3;
+    --text-light: #818181;
+    --text-dark: #212121;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+    padding: 4em 0;
+}
+  
+.card {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--white);
+    max-width: 800px;
+    max-height: 250px;
+    margin: 0 auto;
+    padding: 1em 2em;
+    border: 1px solid var(--light-grey);
+    border-radius: 16px;
+    gap: 1em;
+    cursor: pointer;
+}
+  
+.card img {
+    object-fit:cover;
+    min-width: 200px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.card-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/* create-community ---------------------------------*/
+.content-container > form{
+    gap: 2em;
+}
+
+.content-container > form > label, input {
+    flex-direction: column;
+}
+
+.create-community {
+    min-width: 500px;
+    margin-bottom: 2em;
+}
+
+/* community-detail ---------------------------------*/
+
+.content-container > .community-cover-image {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.community-detail-body {
+    width: 960px;
+    padding-bottom: 200px
+}
+
+.community-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.community-header button {
+    min-width: 0;
+    height: 1em;
+    padding: 2em;
+}
+
+.posts-about-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* posts ----------------------------------------*/
+.posts-container textarea {
+    height: 100px;
+    margin-bottom: 1em;
+}
+
+.post-card {
+    border-radius: 8px;
+    border: 1px solid var(--light-grey);
+    padding: 1em;
+    margin: 2em 0;
+}
+
+.post-card img {
+    width: 100%;
+}
+
+.posts-container button {
+    width: 100%;
+}
+
+.show-comments-button {
+    background-color: white;
+    color: var(--text-light);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.show-comments-button:hover {
+    color: var(--color-4);
+}
+
+/* comments ------------------------------------*/
+.comment-item {
+    padding: 1em;
+    border-radius: 8px;
+    background-color: var(--beige);
+}
